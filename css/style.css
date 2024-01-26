@@ -1,0 +1,26 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; /*actual sizing of 10px*/
+    scroll-behavior: smooth;
+}
+:root {
+    --color-white: ;
+    --color-black: ;
+}
+.container {
+    max-width: 125rem;
+    width: 95%;
+    margin: 0 auto;
+}
