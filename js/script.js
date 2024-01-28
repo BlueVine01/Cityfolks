@@ -2,7 +2,7 @@
 ///////////////////////////////////
 //////////////COUNTDOWN TIMEOUT
 
-var countDownDate = new Date("Jan 02, 2024 00:00:00").getTime();
+var countDownDate = new Date("Feb 15, 2024 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
