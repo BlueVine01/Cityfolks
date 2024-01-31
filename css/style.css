@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "DM Sans", sans-serif;
   font-family: "Lato", sans-serif;
@@ -13,18 +14,19 @@ body {
   line-height: 1.6;
   box-sizing: inherit;
 }
+
 html {
-  font-size: 62.5%; /*actual sizing of 10px*/
+  font-size: 62.5%;
+  /*actual sizing of 10px*/
   scroll-behavior: smooth;
 }
+
 :root {
   --color-white: #fff;
   --color-gray: #ccc;
-  --color-gray-dark: linear-gradient(
-    180deg,
-    rgb(221, 221, 221) 0%,
-    rgb(187, 187, 187) 100%
-  );
+  --color-gray-dark: linear-gradient(180deg,
+      rgb(221, 221, 221) 0%,
+      rgb(187, 187, 187) 100%);
   --color-gray-dark-2: #666;
   --color-black: #000;
   --color-black-2: #333;
@@ -35,11 +37,13 @@ html {
   --color-secondary: #32912d;
   --color-main: #4a5a09;
 }
+
 .container {
-  max-width: 125rem;
+  max-width: 145rem;
   width: 95%;
   margin: 0 auto;
 }
+
 .header {
   width: 100%;
   padding: 0.4rem 0;
@@ -49,28 +53,33 @@ html {
   background-color: var(--bg-color);
   backdrop-filter: blur(10px);
 }
+
 .header__navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7rem;
 }
+
 .logo {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-main);
   font-size: 2.5rem;
   cursor: pointer;
 }
+
 .header__navigation-list {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .header__navigation-item {
   list-style: none;
   font-size: 1.8rem;
   margin-right: 2rem;
 }
+
 .header__navigation-link:link,
 .header__navigation-link:visited {
   text-transform: uppercase;
@@ -80,10 +89,12 @@ html {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .header__navigation-link:hover,
 .header__navigation-link.active {
   color: var(--color-secondary);
   text-shadow: none;
+  backface-visibility: hidden;
 }
 
 /* RESUABLE CLASS NAME THAT CAN BE USED TO SYSTEMATICALLY REDUCES MARGIN,
@@ -92,12 +103,15 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .u-text-center {
   text-align: center;
 }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
+
 .u-margin-bottom-medium {
   margin-bottom: 5rem !important;
 }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
@@ -109,12 +123,14 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.1);
   color: var(--color-white);
 }
+
 .heading--primary-sub {
   font-size: 2.2rem;
   font-weight: 500;
   display: block;
   color: var(--color-white);
 }
+
 .heading__secondary {
   text-transform: capitalize;
   font-size: 2.5rem;
@@ -126,6 +142,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   position: relative;
   text-align: center;
 }
+
 .heading__secondary::before {
   content: "";
   position: absolute;
@@ -140,15 +157,23 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 
 .heading__tertiary {
-  font-size: 4rem;
+  font-size: 3.1rem;
   display: block;
   font-weight: 600;
   text-transform: capitalize;
-  line-height: 1.2;
+  line-height: 1.35;
   color: var(--color-black-3);
   /* text-shadow: var(--black-shadow); */
 }
-.paragraph {
+
+.heading--main {
+  font-size: 2.4rem;
+  color: var(--color-black-3);
+  font-weight: 300;
+}
+
+.paragraph,
+.about__content-list {
   font-size: 2.1rem;
   font-weight: 400;
   margin: 0 0 1rem;
@@ -156,20 +181,35 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   /* max-width: 45rem; */
 }
 
+.heading--content {
+  /* margin: 0; */
+  font-size: 18px;
+  padding: 14px 20px;
+  position: relative;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  background: rgb(221, 221, 221);
+  background: var(--color-gray-dark);
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 1px #f5f5f5;
+
+}
+
 
 .home__section {
   min-height: 100vh;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(224, 167, 167, 0.1),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url("https://www.ncs.org.ng/wp-content/uploads/2019/10/NCS-House-Banner.jpg");
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .hero-content {
   color: var(--color-black);
   display: flex;
@@ -177,6 +217,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   justify-content: center;
   align-items: center;
 }
+
 .launch-time {
   display: flex;
   gap: 2rem;
@@ -185,9 +226,11 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   align-items: center;
   margin-bottom: 3rem;
 }
+
 .launch-time .counter {
   flex-basis: 100px;
 }
+
 .launch-time .counter p {
   font-size: 2.3rem;
   margin-bottom: 1rem;
@@ -202,17 +245,20 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   align-items: center;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
 }
+
 .launch-time .counter span {
   color: var(--color-white);
   font-size: 2.5rem;
   font-weight: 300;
 }
+
 .slider-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3.5rem;
 }
+
 .btn:link,
 .btn:visited {
   font-size: 1.5rem;
@@ -227,11 +273,13 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   letter-spacing: 0.2rem;
   transition: 0.5s ease-in;
 }
+
 .white--btn {
   background: var(--color-white);
   color: var(--color-black) !important;
   font-weight: 500 !important;
 }
+
 .green--btn {
   background: var(--color-secondary);
   color: var(--color-white);
@@ -242,6 +290,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding: 0;
   background: var(--color-gray);
 }
+
 .about--page {
   box-shadow: 0 0 0 0 transparent, 0 -15px 0 0 transparent,
     5px 0 12px -4px rgba(0, 0, 0, 0.2), -5px 0 12px -4px rgba(0, 0, 0, 0.2);
@@ -249,32 +298,35 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding-bottom: 60px;
   background: #fff;
 }
+
 .about__container {
   display: flex;
   justify-content: space-between;
 }
+
 .page--title {
   margin: 0 auto 3rem auto;
-  max-width: 120rem;
   width: 100%;
-  padding-top: 2.5rem;
+  padding-top: 7.5rem;
 }
+
 .region--page--title {
   display: flex;
   justify-content: space-between;
 }
+
 .breadcrumb {
-  flex: 0 0 70%;
-  max-width: 66rem;
+  flex: 0 0 60%;
+  max-width: 85rem;
 }
+
 .social-media {
-  flex: 0 0 20%;
   margin-right: 0;
 
   display: flex;
   justify-content: space-between;
-  margin: 0 .2rem;
 }
+
 .breadcrumb,
 .social-media {
   list-style: none;
@@ -285,46 +337,61 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding-left: 0;
   min-height: 4rem;
 }
+
 .breadcrumb li {
   display: inline-block;
   gap: 1rem;
   padding: 0;
 }
-.breadcrumb li + li::before {
+
+.breadcrumb li+li::before {
   content: "|";
   font-size: 1.5rem;
   margin: 0 1rem;
 }
+
 .breadcrumb li a:link,
 .breadcrumb li a:visited {
   color: var(--color-black-3);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   transition: all .2s ease-in;
 }
+
 .breadcrumb li a:hover,
 .breadcrumb li a:active {
   color: var(--color-main)
 }
-.breadcrumb > li + li::before {
+
+.breadcrumb>li+li::before {
   padding: 0 0 0;
   color: var(--color-main);
 }
+
 .social--link {
   display: inline-block;
   font-size: 3rem;
   text-decoration: none;
+  margin: 0 .5rem;
 }
+
 .about__content {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  margin: 0 3rem;
 }
+
 .about__content-left {
   flex: 0 0 75%;
 }
+
 .about__content-right {
-  flex: 0 0 25%;
+  flex: 0 0 20%;
+  border: 1px solid #ddd;
+  background-color: var(--color-gray-dark);
+  box-shadow: 0 0.5rem 0.5rem var(--black-shadow);
 }
+
 .content__photo {
   display: inline-block;
   max-width: 100%;
@@ -337,4 +404,8 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   margin-top: 0;
   height: auto;
   border: 1px solid #ddd;
+}
+
+.about__content-list li {
+  font-weight: 700;
 }
