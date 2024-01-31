@@ -19,11 +19,21 @@ html {
 }
 :root {
   --color-white: #fff;
+  --color-gray: #ccc;
+  --color-gray-dark: linear-gradient(
+    180deg,
+    rgb(221, 221, 221) 0%,
+    rgb(187, 187, 187) 100%
+  );
+  --color-gray-dark-2: #666;
   --color-black: #000;
   --color-black-2: #333;
   --color-black-3: #111;
-  --bg-color: #32912d;
+  --bg-color: rgba(255, 255, 255, 0.1);
   --color-primary: #23a4;
+  --black-shadow: 0 0.15rem 0.15rem rgba(0, 0, 0, 0.2);
+  --color-secondary: #32912d;
+  --color-main: #4a5a09;
 }
 .container {
   max-width: 125rem;
@@ -37,6 +47,7 @@ html {
   position: fixed;
   z-index: 100;
   background-color: var(--bg-color);
+  backdrop-filter: blur(10px);
 }
 .header__navigation {
   display: flex;
@@ -71,7 +82,7 @@ html {
 }
 .header__navigation-link:hover,
 .header__navigation-link.active {
-  color: var(--color-black-2);
+  color: var(--color-secondary);
   text-shadow: none;
 }
 
@@ -92,21 +103,69 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 
 .heading--primary {
-    font-size: 2.8rem;
-    text-transform: capitalize;
-    font-weight: 300;
-    text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.1)
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.1);
+  color: var(--color-white);
 }
 .heading--primary-sub {
-    font-size: 2.2rem;
-    font-weight: 500;
-    display: block;
+  font-size: 2.2rem;
+  font-weight: 500;
+  display: block;
+  color: var(--color-white);
+}
+.heading__secondary {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: var(--black-shadow);
+  color: var(--color-black);
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  position: relative;
+  text-align: center;
+}
+.heading__secondary::before {
+  content: "";
+  position: absolute;
+  width: 9rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: var(--color-main);
+  top: 4rem;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading__tertiary {
+  font-size: 4rem;
+  display: block;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: var(--color-black-3);
+  /* text-shadow: var(--black-shadow); */
+}
+.paragraph {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  color: var(--color-black);
+  /* max-width: 45rem; */
 }
 
 
 .home__section {
   min-height: 100vh;
-  background-image: linear gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0, 0.2)), url(./a);
+  background-image: linear-gradient(
+      to right,
+      rgba(224, 167, 167, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://www.ncs.org.ng/wp-content/uploads/2019/10/NCS-House-Banner.jpg");
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,8 +194,8 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-black);
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -144,6 +203,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
 }
 .launch-time .counter span {
+  color: var(--color-white);
   font-size: 2.5rem;
   font-weight: 300;
 }
@@ -156,7 +216,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .btn:link,
 .btn:visited {
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 500;
   cursor: pointer;
   padding: 1.2rem 3rem;
   border-radius: 5rem;
@@ -166,20 +226,115 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   border: 0.1rem solid var(--color-white);
   letter-spacing: 0.2rem;
   transition: 0.5s ease-in;
-  color: var(--color-white);
-  box-shadow: var(--black-shadow);
-}
-.btn:hover,
-.btn:active {
-  background: var(--color-secondary);
-  color: var(--color-white);
 }
 .white--btn {
   background: var(--color-white);
   color: var(--color-black) !important;
   font-weight: 500 !important;
 }
-.color-btn {
-  background: var(--color-main);
+.green--btn {
+  background: var(--color-secondary);
   color: var(--color-white);
+}
+
+/* ABOUT CITYFOLKS */
+.about__section {
+  padding: 0;
+  background: var(--color-gray);
+}
+.about--page {
+  box-shadow: 0 0 0 0 transparent, 0 -15px 0 0 transparent,
+    5px 0 12px -4px rgba(0, 0, 0, 0.2), -5px 0 12px -4px rgba(0, 0, 0, 0.2);
+  padding: 0 30px;
+  padding-bottom: 60px;
+  background: #fff;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.page--title {
+  margin: 0 auto 3rem auto;
+  max-width: 120rem;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+.region--page--title {
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumb {
+  flex: 0 0 70%;
+  max-width: 66rem;
+}
+.social-media {
+  flex: 0 0 20%;
+  margin-right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 .2rem;
+}
+.breadcrumb,
+.social-media {
+  list-style: none;
+  position: relative;
+  background: transparent;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+  min-height: 4rem;
+}
+.breadcrumb li {
+  display: inline-block;
+  gap: 1rem;
+  padding: 0;
+}
+.breadcrumb li + li::before {
+  content: "|";
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.breadcrumb li a:link,
+.breadcrumb li a:visited {
+  color: var(--color-black-3);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all .2s ease-in;
+}
+.breadcrumb li a:hover,
+.breadcrumb li a:active {
+  color: var(--color-main)
+}
+.breadcrumb > li + li::before {
+  padding: 0 0 0;
+  color: var(--color-main);
+}
+.social--link {
+  display: inline-block;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between
+}
+.about__content-left {
+  flex: 0 0 75%;
+}
+.about__content-right {
+  flex: 0 0 25%;
+}
+.content__photo {
+  display: inline-block;
+  max-width: 100%;
+  width: 43%;
+  float: right;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 0;
+  height: auto;
+  border: 1px solid #ddd;
 }
