@@ -39,19 +39,22 @@ html {
 }
 
 .container {
-  max-width: 145rem;
+  max-width: 135rem;
   width: 95%;
   margin: 0 auto;
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
-  padding: 0.4rem 0;
-  color: #fff;
   position: fixed;
   z-index: 100;
   background-color: var(--bg-color);
   backdrop-filter: blur(10px);
+  height: 10rem;
 }
 
 .header__navigation {
@@ -63,9 +66,12 @@ html {
 
 .logo {
   text-decoration: none;
-  color: var(--color-main);
   font-size: 2.5rem;
   cursor: pointer;
+}
+.logo--photo {
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 .header__navigation-list {
@@ -290,7 +296,10 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding: 0;
   background: var(--color-gray);
 }
-
+.personnel { 
+  font-weight: 600;
+  color: var(--color-black);
+}
 .about--page {
   box-shadow: 0 0 0 0 transparent, 0 -15px 0 0 transparent,
     5px 0 12px -4px rgba(0, 0, 0, 0.2), -5px 0 12px -4px rgba(0, 0, 0, 0.2);
@@ -303,6 +312,14 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   display: flex;
   justify-content: space-between;
 }
+
+.about--commitee {
+  padding: 9rem 0 0;
+}
+.about--activities {
+  padding: 7rem 0 0;
+}
+
 
 .page--title {
   margin: 0 auto 3rem auto;
@@ -375,21 +392,43 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   margin: 0 .5rem;
 }
 
+.menu--level {
+  list-style: none;
+  position: relative;
+  border-right: 1px solid var(--color-gray);
+  border-left: 1px solid var(--color-gray);
+}
+.menu--level li {
+  border-bottom: 1px solid var(--color-gray-dark-2);
+}
+.menu--level li a {
+  display: block;
+  letter-spacing: normal;
+  text-transform: none;
+  padding: 8px 12px;
+  color: #be590f;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .about__content {
   display: flex;
   justify-content: space-between;
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .about__content-left {
-  flex: 0 0 75%;
+  flex: 0 0 70%;
 }
 
 .about__content-right {
-  flex: 0 0 20%;
+  flex: 0 0 25%;
   border: 1px solid #ddd;
   background-color: var(--color-gray-dark);
   box-shadow: 0 0.5rem 0.5rem var(--black-shadow);
+  height: 4rem;
 }
 
 .content__photo {
