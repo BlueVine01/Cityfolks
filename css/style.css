@@ -121,7 +121,30 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
-
+.heading {
+  position: relative;
+  width: 100%;
+  font-size: 3.4rem;
+  color: #060606;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.heading::after {
+  content: '';
+  background-color: var(--color-secondary);
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 7px;
+  left: 0;
+  border-radius: 100px;
+}
 .heading--primary {
   font-size: 2.8rem;
   text-transform: capitalize;
@@ -168,7 +191,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   font-weight: 600;
   text-transform: capitalize;
   line-height: 1.35;
-  color: var(--color-black-3);
+  color: var(--color-secondary);
   /* text-shadow: var(--black-shadow); */
 }
 
@@ -184,11 +207,19 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   font-weight: 400;
   margin: 0 0 1rem;
   color: var(--color-black);
-  /* max-width: 45rem; */
+}
+
+.contact--paragraph {
+  color: var(--color-white);
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin:  5rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading--content {
-  /* margin: 0; */
   font-size: 18px;
   padding: 14px 20px;
   position: relative;
@@ -202,12 +233,13 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   text-shadow: 0px 1px 1px #f5f5f5;
 
 }
+.index--section {
 
-
+}
 .home__section {
   min-height: 100vh;
   background-image: linear-gradient(to right,
-      rgba(224, 167, 167, 0.1),
+      rgba(225, 1, 167, 0.1),
       rgba(0, 0, 0, 0.2)),
     url("https://www.ncs.org.ng/wp-content/uploads/2019/10/NCS-House-Banner.jpg");
   background-position: center;
@@ -215,7 +247,32 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   justify-content: center;
   align-items: center;
 }
+.index--section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(), rgba()), url();
+}
+.contact--hero {
+  padding: 12rem 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(../assests/img/contact-us.avif);
+  background-position: center;
+  background-size: cover;
+  min-height: 45vh;
+}
 
+.contact--side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact--side--left {
+  flex: 0 0 50%;
+}
+.contact--side--right {
+  flex:  0 0 40%;
+}
 .hero-content {
   color: var(--color-black);
   display: flex;
@@ -319,7 +376,6 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .about--activities {
   padding: 7rem 0 0;
 }
-
 
 .page--title {
   margin: 0 auto 3rem auto;
@@ -447,4 +503,56 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 
 .about__content-list li {
   font-weight: 700;
+}
+
+.mailbox {
+  width: 90%;
+  padding-left: 1rem;
+}
+.mail_text_1 {
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--color-gray-dark-2);
+  background-color: transparent !important;
+  border-bottom: 1px solid #050000 !important;
+  border: 0px;
+
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0;
+  display: inline-block;
+  border-bottom: 0.3rem solid transparent;
+  border-radius: 4px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  border: none;
+}
+.massage_text {
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--color-gray-dark-2);
+  background-color: transparent !important;
+  border-bottom: 1px solid #050000 !important;
+  padding-right: 2rem;
+  border: 0px;
+  height: 7rem;
+  padding-top: 3rem;
+  resize: vertical;
+}
+.mail_text_1:focus,
+.massage_text:focus {
+  outline: none;
+}
+.contact--section {
+  padding: 5rem 0;
+}
+
+.footer {
+  padding: 6rem 0;
+  background-color: var(--color-secondary);
+  line-height: 1.7rem;
+}
+.footer--container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
