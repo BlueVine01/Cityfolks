@@ -28,3 +28,20 @@ var x = setInterval(function() {
     }
 
 }, 1000);
+
+
+///////////////////////////////////
+///////////////////////////////////
+//////////////ACTIVE
+
+const navLinks = document.querySelectorAll("header nav ul li a");
+const windowPathname = window.location.pathanme;
+
+navLinks.forEach(navLink => {
+    const navLinkPathname = new URL(navLink.href).pathname;
+
+    if ((windowPathname === navLinkPathname) || (windowPathname === '/index.html' && navLinkPathname === '/')) {
+        navLink.classList.add("active");
+        // document.querySelector('header nav ul li a[href*= ' +']').classList.add('active')
+    }
+});

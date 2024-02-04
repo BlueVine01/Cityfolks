@@ -121,6 +121,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
+
 .heading {
   position: relative;
   width: 100%;
@@ -145,10 +146,17 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   left: 0;
   border-radius: 100px;
 }
+.simple-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1px;
+  color: var(--color-black);
+}
 .heading--primary {
   font-size: 2.8rem;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.1);
   color: var(--color-white);
 }
@@ -169,7 +177,6 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   position: relative;
-  text-align: center;
 }
 
 .heading__secondary::before {
@@ -181,10 +188,16 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   background: var(--color-main);
   top: 4rem;
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  display: flex;
+  justify-content: center;
 }
-
+.universal-level {
+  font-size: 2.6rem;
+  text-transform: capitalize;
+  color: var(--color-black);
+  font-weight: bold;
+}
 .heading__tertiary {
   font-size: 3.1rem;
   display: block;
@@ -192,7 +205,6 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   text-transform: capitalize;
   line-height: 1.35;
   color: var(--color-secondary);
-  /* text-shadow: var(--black-shadow); */
 }
 
 .heading--main {
@@ -218,7 +230,12 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   justify-content: center;
   align-items: center;
 }
-
+.index-paragraph {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  font-weight: 400;
+  margin: 1rem 0;
+}
 .heading--content {
   font-size: 18px;
   padding: 14px 20px;
@@ -233,11 +250,9 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   text-shadow: 0px 1px 1px #f5f5f5;
 
 }
-.index--section {
 
-}
 .home__section {
-  min-height: 100vh;
+  min-height: 75vh;
   background-image: linear-gradient(to right,
       rgba(225, 1, 167, 0.1),
       rgba(0, 0, 0, 0.2)),
@@ -247,21 +262,59 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   justify-content: center;
   align-items: center;
 }
+.event__section {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(../assests/img/graphics.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .index--section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgba(), rgba()), url();
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../assests/img/logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+.indexx--container,
+.index--about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.index--about-container {
+  flex-direction: column;
+}
+.index--about {
+  background: #E8EAEC;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+}
+.index--high-level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.index--low-level {
+  padding: 3rem 0;
+}
+
 .contact--hero {
   padding: 12rem 0;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(../assests/img/contact-us.avif);
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(../assests/img/contact-us.avif);
   background-position: center;
   background-size: cover;
   min-height: 45vh;
 }
-
 .contact--side {
   display: flex;
   justify-content: space-between;
@@ -273,12 +326,11 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .contact--side--right {
   flex:  0 0 40%;
 }
-.hero-content {
-  color: var(--color-black);
+.event--content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .launch-time {
@@ -401,17 +453,18 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 
 .breadcrumb,
-.social-media {
+.social-media,
+.footer--breadcrumb {
   list-style: none;
   position: relative;
   background: transparent;
   margin-bottom: 0;
   padding-top: 0;
   padding-left: 0;
-  min-height: 4rem;
 }
 
-.breadcrumb li {
+.breadcrumb li,
+.footer--breadcrumb li {
   display: inline-block;
   gap: 1rem;
   padding: 0;
@@ -546,13 +599,89 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding: 5rem 0;
 }
 
-.footer {
+
+.man-of-event {
   padding: 6rem 0;
+}
+.man-of-event__container {
+  display: flex;
+  justify-content: space-between;
+}
+.main--event-photo {
+  width: 50%;
+  height: auto;
+}
+.main--event-left {
+  flex: 0 0 50%;
+}
+.main--event-right {
+  flex: 0 0 50%;
+}
+
+.index--values {
+  padding: 2rem 0;
+  background: var(--color-white);
+}
+.footer {
+  padding: 1.5rem 0 1rem;
   background-color: var(--color-secondary);
   line-height: 1.7rem;
 }
 .footer--container {
+  padding: 2rem 0 4rem;
+  display: flex;
+  width: 100%;
+}
+.footer--heading {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.footer--paragraph {
+  font-size: 1.6rem;
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.footer--item {
+  flex: 0 0 50%;
+}
+.footer--item-right {
+  margin-left: 0 auto;
+  padding: 0 5rem;
+  max-width: 35rem;
+}
+.copyright {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  padding: .3rem 0;
+}
+
+.footer--breadcrumb li+li::before {
+  content: "/";
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.footer--breadcrumb li a:link,
+.footer--breadcrumb li a:visited {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all .2s ease-in;
+  font-weight: 300;
+}
+
+.footer--breadcrumb li a:hover,
+.footer--breadcrumb li a:active {
+  color: var(--color-black);
+}
+
+.breadcrumb>li+li::before {
+  padding: 0 0 0;
+  color: var(--color-main);
 }
