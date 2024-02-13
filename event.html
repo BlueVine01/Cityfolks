@@ -30,21 +30,45 @@
 </head>
 
 <body>
+
+  <div class="sidebar">
+    <a class="active" href="./index.html">HOME</a>
+    <a href="./about.html">ABOUT CLUB</a>
+    <a href="./event.html">EVENT</a>
+    <a href="#schedule">MEMBERS ONLY</a>
+    <a href="./contact.html">CONTACT</a>
+
+    <button class="hamburger ">
+      <span>
+        <img  class="menu-close" src="./assests/img/icon-close.svg" alt="menu-close">
+      </span>
+    </button>
+  </div>
+  <div class="overlay"></div>
+
   <header class="header">
     <div class="container">
       <nav class="header__navigation">
         <a href="#" class="logo"><img src="./assests/img/logo.jpg" alt="CityFolks´ Logo" class="logo--photo"></a>
 
+
+        <button class="hamburger">
+          <span>
+            <img class="menu-mobile" src="./assests/img/icon-menu.svg" alt="menu-open">
+
+          </span>
+        </button>
+
         <div class="navigation__nav" id="navigation__nav">
           <ul class="header__navigation-list">
             <li class="header__navigation-item">
-              <a href="./index.html" class="header__navigation-link active">home</a>
+              <a href="./index.html" class="header__navigation-link">home</a>
             </li>
             <li class="header__navigation-item">
               <a href="./about.html" class="header__navigation-link">about club</a>
             </li>
             <li class="header__navigation-item">
-              <a href="./event.html" class="header__navigation-link">event</a>
+              <a href="./event.html" class="header__navigation-link active">event</a>
             </li>
             <li class="header__navigation-item">
               <a href="#schedule" class="header__navigation-link">members only</a>

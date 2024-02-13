@@ -45,3 +45,40 @@ navLinks.forEach(navLink => {
         // document.querySelector('header nav ul li a[href*= ' +']').classList.add('active')
     }
 });
+
+
+
+const sideBar = document.querySelector(".sidebar");
+const mobileMenu = document.querySelector(".menu-mobile");
+const closeMenu = document.querySelector(".menu-close");
+const sideOverlay = document.querySelector('.overlay');
+
+mobileMenu.addEventListener('click', () => {
+    sideBar.style.display = 'block'
+    closeMenu.style.display = 'block'
+    mobileMenu.style.display = 'none'
+    sideOverlay.style.display =" block"   
+})
+
+closeMenu.addEventListener('click', () => {
+    sideBar.style.display = 'none'
+    closeMenu.style.display = 'none'
+    mobileMenu.style.display = 'block'
+    sideOverlay.style.display =" none"   
+
+})
+
+const btns = document.querySelectorAll('.read-more-btn');
+
+btns.forEach(btn => {
+    btn.addEventListener('click', event => {
+        const current = event.currentTarget;
+        const currentText = current.parentNode.querySelector('.read-more-text');
+
+        currentText.classList.toggle('read-more-text--show');
+
+        current.textContent = currentText.classList.contains('read-more-text--show') ?
+            "Read Less..." : "Read More...";
+    });
+});
+

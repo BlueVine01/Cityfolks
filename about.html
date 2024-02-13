@@ -33,19 +33,42 @@
 </head>
 
 <body>
+
+  <div class="sidebar">
+    <a class="active" href="./index.html">HOME</a>
+    <a href="./about.html">ABOUT CLUB</a>
+    <a href="./event.html">EVENT</a>
+    <a href="#schedule">MEMBERS ONLY</a>
+    <a href="./contact.html">CONTACT</a>
+
+    <button class="hamburger ">
+      <span>
+        <img  class="menu-close" src="./assests/img/icon-close.svg" alt="menu-close">
+      </span>
+    </button>
+  </div>
+  <div class="overlay"></div>
+
     <header class="header">
         <div class="container">
             <nav class="header__navigation">
                 <a href="#" class="logo"><img src="./assests/img/logo.jpg" alt="CityFolks´ Logo"
                         class="logo--photo"></a>
 
+                       <button class="hamburger">
+                          <span>
+                            <img class="menu-mobile" src="./assests/img/icon-menu.svg" alt="menu-open">
+            
+                          </span>
+                        </button>
+
                 <div class="navigation__nav" id="navigation__nav">
                     <ul class="header__navigation-list">
                         <li class="header__navigation-item">
-                            <a href="./index.html" class="header__navigation-link active">home</a>
+                            <a href="./index.html" class="header__navigation-link">home</a>
                         </li>
                         <li class="header__navigation-item">
-                            <a href="./about.html" class="header__navigation-link">about club</a>
+                            <a href="./about.html" class="header__navigation-link active">about club</a>
                         </li>
                         <li class="header__navigation-item">
                             <a href="./event.html" class="header__navigation-link">event</a>
@@ -69,7 +92,7 @@
                 <h1 class="heading--primary u-text-center">
                   ....About CityFolk's Club of Nigeria
                 </h1>
-                <h2 class="heading--primary-sub u-text-center">Towards a common  goal</h2>
+                <h2 style="font-style: italic; font-size: 20px;" class="heading--primary-sub u-text-center">Many Folks... One Fold</h2>
               </div>
             </div>
           </section>
@@ -133,30 +156,354 @@
       
                 <div class="about--commitee" id="committee">
                   <h3 class="heading__tertiary u-margin-bottom-small">
-                    CityFolks´ Committee
+                    CityFolks´ Club Members
                   </h3>
-                  <h4 class="heading--main u-margin-bottom-small"> The position of President will be subject to election, with eligibility limited to members who have completed a minimum of <b>two (2) years</b> of membership. Elections for all committee offices will take place after members have served for a minimum of <b>one (1) year.</b>
-                  </h4>
-                  <div class="about__content u-margin-bottom-medium">
+                  <!-- <h4 class="heading--main u-margin-bottom-small"> The position of President will be subject to election, with eligibility limited to members who have completed a minimum of <b>two (2) years</b> of membership. Elections for all committee offices will take place after members have served for a minimum of <b>one (1) year.</b> -->
+                  <!-- </h4> -->
+                  <div class="about__content u-margin-bottom-medium"> 
                     <div class="about__content-left">
-                      <ul class="about__content-list">
+                        <div class="about-members">
+
+
+                          <div class="about-members-info">
+                            <div class="about-member jaji"></div>
+
+                          <div class="container">
+                            <p style="margin-top: 10px; word-break: break-all;" class="paragraph"> <span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Hon. Lanre Jaji</span> 
+                              MD/CEO 
+                              LARRY JAY BOREHOLE DRILLERS 
+                              <br>IMMEDIATE PAST STATE  SECRETARY AWDROP <br> OGUN STATE. 
+                              In coming President Cityfolks <br>Club of Nigeria.</p>
+                            </div>
+                        </div>
+                          
+                      <div class="about-members-info">
+                          <div class="about-member sodiya"></div>
+
+                          <div class="container">
+                          <p style="margin-top: 10px; word-break: break-all;" class="paragraph"> <span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Prof. Adesina S. Sodiya</span>
+                            Professor of Computer Science and <br>Information Security 
+                            Department of Computer Science 
+                            Federal  University of Agriculture,  <br>Abeokuta.
+                            Immediate Past President,
+                            Nigeria <br>Computer Society (NCS)
+                            (Pioneer President <br>1996 - 1997).</p>
+                          </div>
+                      </div>
+
+                      <div class="about-members-info">
+                        <div class="about-member olusegun"></div>
+
+                        <div class="read-more-container">
+                        <div class="container">
+                          <p style="margin-top: 10px; word-break: break-all;" class="paragraph"> <span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary);margin-bottom: 3px; ">Olusegun Richard Adeleye ANIMN</span> 
+                            Associate certified Marketer and holds a <br>Masters of Business 
+                            Administration MBA in <br>Marketing Management from ESUT Business <br>School, Enugu. 
+                            A former Regional Sales <br>Manager at Ragolis Waters Ltd. MD/CEO 
+                            <span class="read-more-text"> <br>Segadel Marketing and Logistics services <br>incorporated.
+                              President City folks club ( <br>Millennium President) 1999-2000. </span>
+                          </p>
+                          <span class="paragraph read-more-btn">Read More...</span>
+                          </div>
+                          </div>
+                     </div>
+
+                     <div class="about-members-info">
+                      <div class="about-member gafar"></div>
+                      <div class="read-more-container">
+
+                        <div class="container">
+                        <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Gafar Idowu AYODEJI</span> 
+                          A Professor of Political Science specialising in <br> the areas of Governance, 
+                          Contemporary <br>Politics and Administration. He teaches in the Department of Political Science, 
+                          Tai Solarin <br>University of Education (TASUED), Ijagun, Ogun 
+                        <span class="read-more-text">State, Nigeria. 
+                          He is the immediate past Dean of the College of Social and  Management <br>Sciences (COSMAS), 
+                          TASUED and currently the Director of Research and Publications, 
+                          Nigerian Political Science Association (NPSA). Also, the <br> current Head of 
+                          Department of Political <br>Science and International Relations, 
+                          Augustine University Ilara-Epe, Lagos State where he is <br>having his sabbatical leave.</span>
+                        </p>
+                          <span class="paragraph read-more-btn">Read More...</span>
+                        </div>
+                    </div>
+                  </div>
+
+                   <div class="about-members-info">
+                    <div class="about-member babatunde"></div>
+
+                    <div class="read-more-container">
+
+                      <div class="container">
+
+                      <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color:  var(--color-secondary); margin-bottom: 3px;">Babatunde Atobatele</span> BA, MCA (Ibadan), Adv. Dip, HRM (Lagos)
+                        <br>Formerly an Administrative Assistant to the <br>Attorney-General of Ogun State; also served <br>as Manager, at Reals 
+                        Group of Companies, <br>Abeokuta; was Manager of Administration and 
+                        
+                      <span class="read-more-text">Operations at, British- Organic Centre, Ibadan. Atoba, as fondly called, takes a deep-rooted <br>love in genres 
+                        of writing. He currently enjoys <br>membership with a few Service and <br>Humanitarian clubs, across the globe.
+                        His <br>fortes now are, Management Consultancy and business ventures.
+                        He was the President of the great, 
+                        CityFolks Club of Nigeria, 2003-2005.</span>
+                      </p>
+
+                        <span class="paragraph read-more-btn">Read More...</span>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="about-members-info">
+                  <div class="about-member abiodun"></div>
+
+                  <div class="read-more-container">
+
+                    <div class="container">
+
+                    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Pharm. Abiodun A Coker</span>
+
+                      A conscientious and compassionate <br>seasoned clinically oriented Pharmacist. 
+                      
+                      <br>Deputy Director of Pharmaceutical services <br>and Head of the Pharmacy unit, Health <br>services Directorate, Federal 
+                      University of <br>
+                      
+                      <span class="read-more-text">Agriculture, Abeokuta.              
+                      
+                      A holder of Bachelor of <br>Pharmacy from ‘Oba Awon University’, the <br>prestigious Obafemi Awolowo University and a 
+                      master’s degree in clinical pharmacy and <br>Pharmacy administration from University of <br>Ibadan, Nigeria.  
+                      
+                      A member of the <br>Pharmaceutical society of Nigeria and <br>registered to practice by the Pharmacy <br>Council of Nigeria.     
+                      
+                      The president of Cityfolks <br>Club of Nigeria. July 2005 - December 2006.</span>
+                    </p>
+
+                      <span class="paragraph read-more-btn">Read More...</span>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="about-members-info">
+                <div class="about-member biodun"></div>
+
+                <div class="container">
+                  <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase;display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Biodun S Badmus, Ph.D.</span>           
+                    Professor of Applied Geophysics. Department of Physics, Federal University of Agriculture, <br>Abeokuta. 
+                    The president of CityFolks Club of <br> Nigeria, 2006-2007.</p>
+
+                  </div>
+             </div>
+
+
+             <div class="about-members-info">
+              <div class="about-member bakare"></div>
+
+              <div class="read-more-container">
+
+                <div class="container">
+
+                <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Afolabi Bakare</span>           
+                  A holder of Master of Business Administration (Marketing). 
+                  He is the Executive Director of <br>Humani Heritage Marketing Consultancy, <br>Canada. 
+                  He also works with Leon's Furniture as the Senior Manager of Appliances and <br>
+                  <span class="read-more-text">Electronics department. 
+                  He is the immediate <br>past president of Olumo Progressive <br>Association of Canada. 
+                  Olumo Progressive <br>Association Canada (OPAC) Inc, is a group of <br>Egba and Yewa indigenes who are residing in Canada. 
+                 City Folks president, 2009 to 2010.</span>
+                </p>
+
+                 <span class="paragraph read-more-btn">Read More...</span>
+                </div>
+            </div>
+           </div>
+
+
+
+           <div class="about-members-info">
+            <div class="about-member chris"></div>
+
+            <div class="container">
+              <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">CHRIS AWE-MATHIAS</span>           
+                Chartered Accountant and Deputy Bursar, 
+                <br>Federal University of Agriculture Abeokuta. <br>President 2012-2013.</p>
+              </div>
+         </div>
+
+         <div class="about-members-info">
+          <div class="about-member adekambi"></div>
+
+          <div class="container">
+            <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">HON.  AFOLABI N. ADEKANMBI</span>           
+              MD/CEO Crystalball Pharmacy Limited, 
+              <br>National President Association of <br>Pharmaceutical Product Marketers of <br>Nigeria,( Cityfolks President 2017-2018).</p>
+            </div>
+       </div>
+
+
+       <div class="about-members-info">
+        <div class="about-member adeniyi"></div>
+
+        <div class="read-more-container">
+
+          <div class="container">
+
+          <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;">Engr. Adeniyi Adeleke</span>           
+            A stalwart in the Nigeria Power sector, 
+            brings <br>forth a legacy marked by unwavering <br>commitment and over 25 years of invaluable <br>industry expertise.  
+            2019- IBEDC Technical <br>Manager for the Ibadan Region.
+            2021- Regional 
+
+            <span class="read-more-text">Head for Ibadan Region.
+              2023- Regional Head <br>for Osun.
+              Currently holding the esteemed <br>position of Head of Revenue Protection 
+              and <br>Assurance for the largest Disco in Nigeria since 2023.
+              Beyond his corporate endeavours, Engr. Adeleke is a multifaceted entrepreneur. 
+              As the MD/CEO of Rockface Hotels and Suites Limited, God is Sufficient Farm 
+              Nigeria Limited, <br>Greenroof Nigeria Limited, and Hawa Baba & <br>Co., he has 
+              successfully carved a niche in <br>diverse industries, 
+              showcasing his resilience <br>and business acumen.
+              In his personal life, Engr. Adeleke embraces the values of rotation, <br>reflecting 
+              his adaptability to changing <br>circumstances. Married.  Adeleke - President <br>2016-2017.</span>
+          </p>
+
+           <span class="paragraph read-more-btn">Read More...</span>
+          </div>
+      </div>
+     </div>
+
+
+     <div class="about-members-info">
+      <div class="about-member adesina"></div>
+
+      <div class="container">
+        <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> ADESINA SANUSI</span> 
+
+       Geologist in private practice 
+
+       <br>Cityfolks President (2018-2019). </p>
+        </div>
+   </div>
+     
+
+   <div class="about-members-info">
+      <div class="about-member taiwo"></div>
+
+      <div class="container">
+        <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> Dr. FELIX TAIWO AJAYI</span> 
+          MD/CEO HEALTHICON PHARMACY LTD.  
+          FORMER CHAIRMAN PHARMACEUTICAL SOCIETY OF <br>NIGERIA. PRESIDENT CITYFOLKS CLUB OF NIGERIA 2020 - 2023. </p>
+        </div>
+   </div>
+
+   <div class="about-members-info">
+    <div class="about-member yusuf"></div>
+
+    <div class="container">
+      <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> HON.YUSUF OLATUNJI DAUDA</span> 
+        MD/CEO IREMIDE CONSTRUCTION AND REALTOR LTD.                                         
+        MEMBER (CITYFOLKS CLUB OF NIGERIA). </p>
+      </div>
+ </div>
+
+
+ <div class="about-members-info">
+  <div class="about-member sofunde"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> HON. SOFUNDE OLAJIDE PETER</span>                                                    
+      PROFESSIONAL MARKETER AND POULTRY FARMER.                  
+      GENERAL SECRETARY CITY FOLKS CLUB OF <br>NIGERIA 2020 - 2023. </p>
+    </div>
+</div>
+
+
+<div class="about-members-info">
+  <div class="about-member babatolu"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> BABATOLU AYORINDE TOBI</span>                                                    
+      An Academics in the Department of  <br>Accounting, Federal University of <br> Agriculture, Abeokuta 
+
+      Social Secretary of <br>the City Folks Club of Nigeria. </p>
+    </div>
+</div>
+
+<div class="about-members-info">
+  <div class="about-member adebeshin"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> Dr. Adebeshin Lawal Oladimeji  </span>                                                   
+      (A Surgeon)  MD Besh Lifecare limited <br>Hospitals, Founder Besh Foundation </p>
+    </div>
+</div>
+
+<div class="about-members-info">
+  <div class="about-member salami"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> Comrade Salami T. ABAYOMI</span>                  
+     Founder/ CEO  Abayo Beulah Educational <br>Consult </p>
+    </div>
+</div>
+
+
+<div class="about-members-info">
+  <div class="about-member adebayo"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> Dr. Adebayo Oluwatosin T.</span>                  
+       Economist / Barrister       
+      President Intellectual <br>Havarde Group </p>
+    </div>
+</div>
+
+<div class="about-members-info">
+  <div class="about-member uthman"></div>
+
+  <div class="container">
+    <p style="margin-top: 10px; word-break: break-all;" class="paragraph"><span style="text-transform: uppercase; display: block; font-weight: bold; color: var(--color-secondary); margin-bottom: 3px;"> Uthman Adebowale Balogun</span>                  
+      CEO of Uthman Adebowale & Associates Ltd <br>and Hi-Bams Integrated Services.
+      He is a <br>Building Contractor, a Tax Consultant, <br>Automobile Dealer and General Merchant. </p>
+    </div>
+</div>
+
+     </div>
+     </div>
+
+                    
+                      <!-- <ul class="about__content-list">
                         <li>President: <strong class="paragraph">Alaine Marie R. Obra (Phillipines)</strong></li>
                         <li>Vice-President: <strong class="paragraph">Toro Yokahima (Japan)</strong></li>
                         <li>Treasurer: <strong class="paragraph">Ammodul Bello (Nigeria)</strong></li>
                         <li>Secretary: <strong class="paragraph">Rikira Nakamhurda (Japan)</strong></li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
+                      </ol> -->
+
+      </div>
+      </div>
+    </div>
                 
                 <div class="about--history">
-                  <h3 class="heading__tertiary u-margin-bottom-small">history</h3>
-                  <p class="paragraph">CITYFOLKS CLUB OF NIGERIA, founded in Nigeria, obtained its official incorporation on October 23, 2008. Comprising adults from diverse tribes, races, and backgrounds, the club was established with the primary aim of serving as a social support network for public relations. Beyond its foundational purpose, the CityFolks Club of Nigeria adopts a comprehensive approach to fulfill its objectives. Emphasizing aspects such as friendship, support, community outreach, education, fundraising, and effective public relations, the organization is dedicated to creating a meaningful and positive impact on the lives of its members and the wider community.</p>
+                  <h3 class="history-heading heading__tertiary u-margin-bottom-small">club history</h3>
+                  <p class="history-para paragraph">
+                    The Cityfolks Club of Nigeria is a vibrant organization that was established by a group of dedicated professionals in Abeokuta City. The primary objective of the club is to serve humanity, fostering friendship, and providing a platform for socializing and networking. It is important to note that the club is entirely apolitical, with a firm interest in supporting national development initiatives.
+
+                    The pioneer President, Folk Adesina Sodiya, officially initiated the Cityfolks Club, providing leadership from 1996 to 1997, and the symbol of membership for the Cityfolks Club is the term "Folk."
+                    
+                    Since its inception, the club has seen various individuals serve as President, and in its commitment to continuity and stability, the tenure of the President has been upgraded to a minimum of two years, or more terms if elected. In 2008, the Cityfolks Club was formally incorporated, receiving registration number 29877 and establishing its address at Sodimu House, opposite White House, Labayiwa Oke Aregba, Abeokuta, Ogun State.
+                   
+                    <span>Following Folk Adesina Sodiya's presidency, a number of esteemed individuals, namely Folk Femi Yusuf, Folk Segun, Folk Ayodeji Adeleye, Folk Tunde Atobatele, Folk Biodun Badmus, Folk Afolabi Bakare, Folk Biodun Coker, Folk Chris Boniwe, Folk Afolabi Adekanmbi, Folk Niyi Adeleke, Folk Sina Sanusi, and the outgoing President, Folk Taiwo Ajayi, have assumed the role of President. Currently, the City Folks Club is preparing to inaugurate its 13th President, Folk Lanre Jaji.</span>
+                    
+                     The club's guiding motto, "Many Folks... One Fold," epitomizes its dedication to unity, collaboration, and the collective well-being of its members and the broader community. In recognition of notable contributions, the club has had esteemed honorary members such as Alhaji Badru, the former AGM of Ogun State Water Corporation, Otunba Debo Okunowo, the head of the Lagos office of OGBC, and Chief Yemi Sanusi, who championed the Cityfolks project. The club is grateful for their moral and financial support.
+                     <span>The Cityfolks Club's historical heroes, including Arch Bola Ogunbayo and the late Aroyeun, have played pivotal roles in shaping the organization. Additionally, individuals such as Tunji Soremi, Tunde Atobatele, Segun Adeleye, and Sina Sodiya were instrumental in ensuring the club's establishment despite the challenges faced during its formative stage.</span>
+                    </p>
                 </div>
+
+                <hr style="margin-top: 80px;">
                 
                 <div class="about--activities" id="activities">
-                  <h3 class="heading__tertiary u-margin-bottom-small">Club activities</h3>
-                  <p class="paragraph">CityFolks club of Nigeria  is committed to fostering a sense of community through the maintenance of a dedicated Club House. The Social Secretary plays a pivotal role in ensuring the smooth day-to-day functioning of the facility, with regular reporting on activities and financial matters. Our unique meeting setup at the Club House encourages members to bring their own meals, creating a relaxed and enjoyable atmosphere for all.</p>
+                  <h3 class="activities-heading heading__tertiary u-margin-bottom-small">Club activities</h3>
+                  <p class="activities-para paragraph">CityFolks club of Nigeria  is committed to fostering a sense of community through the maintenance of a dedicated Club House. The Social Secretary plays a pivotal role in ensuring the smooth day-to-day functioning of the facility, with regular reporting on activities and financial matters. Our unique meeting setup at the Club House encourages members to bring their own meals, creating a relaxed and enjoyable atmosphere for all.
+                    <span>The club held its inaugural meeting in October 1995 at 12 Imo Street, Abeokuta, with four original members, eventually expanding to 12 graduates. Noteworthy figures such as Mrs. M.B.T. Obe, the Treasury Manager of Gateway Bank of Nigeria Plc, and Mr. Ayo Ogunbanjo, the Managing Partner of Ayo Ogunbanjo and Co. Estate Surveyors and Valuers, have been pivotal to the club's early development.</span>
+                    As the Cityfolks Club looks forward to inaugurating its 13th President, the spirit of unity and collaboration encapsulated in its motto, "Many Folks... One Fold," continues to guide the organization towards a future of growth and prosperity.
+                  </p>
                 </div>
               </div>
             </div>

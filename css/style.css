@@ -64,6 +64,21 @@ html {
   height: 7rem;
 }
 
+.menu-mobile{
+  display: none;
+}
+.menu-close{
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+
+.hamburger{
+  border: none;
+  background: n;
+}
+
 .logo {
   text-decoration: none;
   font-size: 2.5rem;
@@ -425,8 +440,146 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .about--commitee {
   padding: 9rem 0 0;
 }
+.about-members{
+  /* display: flex;
+  gap: 40px; */
+  margin-top: 30px;
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  row-gap: 10px;
+  column-gap: 40px;
+  
+}
+.about-members-info{
+  display: flex;
+  flex-direction: column;
+}
+.about-member{
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 1rem rgba(0,0,0,.1);
+}
+.jaji{
+  background-image: url(/assests/img/92d0c209-8177-46b8-93d7-a8958bb08d58.jpg);
+}
+.sodiya{
+  background-image: url(/assests/img/2a380b02-7936-48b9-8acf-7c90b743c0ff.jpg);
+}
+.olusegun{
+  background-image: url(/assests/img/2d5f73dd-881d-4ed3-aae3-20cd76124db7.jpg);
+}
+.gafar{
+  background-image: url(/assests/img/b2e1d2a7-678b-449a-9c5f-3aff83e52d7a.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.babatunde{
+  background-image: url(/assests/img/e2262959-d642-4d5b-8836-bbe440a59a08.jpg);
+}
+.abiodun{
+  background-image: url(/assests/img/c81328a0-1adf-4a09-b47c-062247e32458.jpg);
+}
+.biodun{
+  background-image: url(/assests/img/bb5accbb-7d15-4f30-be5a-f895bfc14b9b\ \(1\).jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bakare{
+  background-image: url(/assests/img/544185a1-2964-4798-9604-4b128af50f07.jpg);
+}
+.chris{
+  background-image: url(/assests/img/940c39a4-82ce-444f-9d95-b62edfbf4bb6.jpg);
+}
+.adekambi{
+  background-image: url(/assests/img/img.png.PNG);
+}
+.adeniyi{
+  background-image: url(/assests/img/c898dec7-bb0d-4afc-bd0a-c76d8d9eabba.jpg);
+}
+.adesina{
+  background-image: url(/assests/img/862f7fc5-7f77-45cf-8f63-987bbe7ace71\ \(1\).jpg);
+}
+.taiwo{
+  background-image: url(/assests/img/b593d1e5-144f-40fa-a06d-b31ad18abbec.jpg);
+}
+.yusuf{
+  background-image: url(/assests/img/img2.PNG);
+}
+.sofunde{
+  background-image: url(/assests/img/f7349709-5507-4f84-9903-3fad65b78586.jpg);
+}
+.babatolu{
+  background-image: url(/assests/img/img3.PNG);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.adebeshin{
+  background-image: url(/assests/img/8948a505-ae8d-49cf-9653-3968f0f59b13.jpg);
+}
+.salami{
+  background-image: url(/assests/img/3938193a-11cf-4a77-97e2-37ffc809ab33.jpg);
+}
+.adebayo{
+  background-image: url(/assests/img/e0ea1b32-601b-4919-b187-68251db7e997.jpg);
+}
+.uthman{
+  background-image: url(/assests/img/56d25c24-deed-44b3-933b-0b704dd9aeaf.jpg);
+}
+
+.about-members .paragraph{
+  font-size: 12px;
+}
+.container{
+  padding: 1px 2px 1px 2px;
+  margin-top: 5px;
+  box-shadow: 0 0 1rem rgba(0,0,0,.1);
+}
+.read-more-btn{
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  bottom: 15px;
+}
+.read-more-text{
+  display: none;
+}
+.read-more-text--show{
+  display: inline;
+}
+
+.history-heading{
+  padding: 10px 30px 0px 30px;
+}
+.history-para{
+  padding: 0px 30px 0px 30px;
+}
+.history-para span{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .about--activities {
   padding: 7rem 0 0;
+  margin-bottom: 30px;
+}
+.activities-heading{
+  padding: 0px 30px 0px 30px;
+}
+.activities-para{
+  padding: 0px 30px 0px 30px;
+}
+.activities-para span{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .page--title {
@@ -634,7 +787,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 .footer--heading {
   font-size: 1.8rem;
-  color: var(--color-white);
+  color: var(--color-white); 
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -685,3 +838,4 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding: 0 0 0;
   color: var(--color-main);
 }
+
