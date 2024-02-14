@@ -32,17 +32,17 @@
 <body>
 
   <div class="sidebar">
-    <a class="active" href="./index.html">HOME</a>
-    <a href="./about.html">ABOUT CLUB</a>
-    <a href="./event.html">EVENT</a>
-    <a href="#schedule">MEMBERS ONLY</a>
-    <a href="./contact.html">CONTACT</a>
-
     <button class="hamburger ">
       <span>
         <img  class="menu-close" src="./assests/img/icon-close.svg" alt="menu-close">
       </span>
     </button>
+    <a class="active" href="./index.html">HOME</a>
+    <a href="./about.html">ABOUT</a>
+    <a href="./event.html">EVENT</a>
+    <a href="#schedule">MEMBERS ONLY</a>
+    <a href="./contact.html">CONTACT</a>
+
   </div>
   <div class="overlay"></div>
 
@@ -54,7 +54,7 @@
 
         <button class="hamburger">
           <span>
-            <img class="menu-mobile" src="./assests/img/icon-menu.svg" alt="menu-open">
+           <i class="menu-mobile fas fa-bars"></i>
 
           </span>
         </button>
@@ -64,14 +64,45 @@
             <li class="header__navigation-item">
               <a href="./index.html" class="header__navigation-link">home</a>
             </li>
-            <li class="header__navigation-item">
-              <a href="./about.html" class="header__navigation-link">about club</a>
+            <li class="header__navigation-item dropdown" onclick="myFunction()">
+              <a href="./about.html" class="header__navigation-link">about                 <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#" onclick="moveAbout('aboutClub')">About CityFolks</a>
+                <a href="#" onclick="moveAbout('about--page')">History of Cityfolks Club</a>
+                <a href="#" onclick="moveAbout('aboutExecutive')">Executives</a>
+                <a href="#" onclick="moveAbout('committee')">Past Presidents</a>
+                <a href="#" onclick="moveAbout('about--patron')">Cityfolks Patron</a>
+                <a href="#" onclick="moveAbout('about--newMembers')">New Members</a>
+              </div>
             </li>
-            <li class="header__navigation-item">
-              <a href="./event.html" class="header__navigation-link active">event</a>
+          
+            <li class="header__navigation-item dropdown" onclick="myFunction()">
+              <a href="./event.html" class="header__navigation-link active">event <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Annual Dinners</a>
+
+                <a href="#">Monthly Party</a>
+                <a href="#">Family Party</a>
+                <a href="#">Others</a>
+              </div>
             </li>
-            <li class="header__navigation-item">
-              <a href="#schedule" class="header__navigation-link">members only</a>
+            <li class="header__navigation-item dropdown" onclick="myFunction()">
+              <a href="./" class="header__navigation-link">membership <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">New Members</a>
+                <a href="#">Returning Members</a>
+              </div>
+            </li>
+            <li class="header__navigation-item dropdown" onclick="myFunction()">
+              <a href="./portal.html" class="header__navigation-link">members only <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="./portal.html">Portal Login</a>
+                <a href="#">Profile update</a>
+                <a href="#">Dues Payment</a>
+                <a href="#">Financial Report</a>
+
+              </div>
             </li>
             <li class="header__navigation-item">
               <a href="./contact.html" class="header__navigation-link">contact</a>
@@ -152,12 +183,12 @@
         <div class="copy--item">
           <span class="footer--paragraph">Copyright © 2024 Cityfolks Club of Nigeria. All rights reserved.</span>
         </div>
-        <div class="copy--item">
+        <div class="copy--item-right">
           <ol class="footer--breadcrumb">
             <li><a href="#">Home</a></li>
             <li><a href="./about.html">About CityFolks</a></li>
             <li><a href="./event.html">Event</a></li>
-            <li><a href="./membership.html">Membership Portal</a></li>
+            <li><a href="./portal.html">Membership Portal</a></li>
           </ol>
         </div>
       </div>

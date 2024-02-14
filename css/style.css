@@ -64,8 +64,49 @@ html {
   height: 7rem;
 }
 
+.dropdown  {
+  font-size: 12px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .menu-mobile{
   display: none;
+  font-size: 4rem;
+  background-color: none;
 }
 .menu-close{
   display: none;
@@ -75,8 +116,10 @@ html {
 }
 
 .hamburger{
+  display: none;
   border: none;
-  background: n;
+  background: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -175,7 +218,10 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.1);
   color: var(--color-white);
 }
-
+.member-paragraph {
+  font-size: 1.3rem;
+  color: var(--color-black);
+}
 .heading--primary-sub {
   font-size: 2.2rem;
   font-weight: 500;
@@ -332,11 +378,12 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 .contact--side {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 .contact--side--left {
-  flex: 0 0 50%;
+  flex: 0 0 48%;
 }
 .contact--side--right {
   flex:  0 0 40%;
@@ -427,7 +474,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .about--page {
   box-shadow: 0 0 0 0 transparent, 0 -15px 0 0 transparent,
     5px 0 12px -4px rgba(0, 0, 0, 0.2), -5px 0 12px -4px rgba(0, 0, 0, 0.2);
-  padding: 0 30px;
+  padding: 0 10px;
   padding-bottom: 60px;
   background: #fff;
 }
@@ -441,20 +488,18 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   padding: 9rem 0 0;
 }
 .about-members{
-  /* display: flex;
-  gap: 40px; */
-  margin-top: 30px;
-  margin-left: 80px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-  row-gap: 10px;
-  column-gap: 40px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2rem;
 }
 .about-members-info{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  flex: 0 0 20%;
 }
 .about-member{
   width: 300px;
@@ -531,24 +576,31 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 .uthman{
   background-image: url(/assests/img/56d25c24-deed-44b3-933b-0b704dd9aeaf.jpg);
 }
-
+.sanusiChief {
+  background-image: url(../assests/img/patron3.jpg);
+}
+.olalaye {
+  background-image: url(../assests/img/patron.jpeg);
+}
 .about-members .paragraph{
   font-size: 12px;
 }
-.container{
-  padding: 1px 2px 1px 2px;
-  margin-top: 5px;
-  box-shadow: 0 0 1rem rgba(0,0,0,.1);
+.members-container{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
 }
 .read-more-btn{
   color: var(--color-secondary);
   cursor: pointer;
   font-size: 18px;
   position: relative;
-  bottom: 15px;
 }
 .read-more-text{
   display: none;
+  text-transform: capitalize; color: var(--color-black); font-size: 1.4rem; font-weight: 400;
 }
 .read-more-text--show{
   display: inline;
@@ -801,7 +853,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   flex: 0 0 50%;
 }
 .footer--item-right {
-  margin-left: 0 auto;
+  margin-left: auto;
   padding: 0 5rem;
   max-width: 35rem;
 }
@@ -811,7 +863,8 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   align-items: center;
   padding: .3rem 0;
 }
-
+.copy--item-right {
+margin-right: 0;}
 .footer--breadcrumb li+li::before {
   content: "/";
   font-size: 1.6rem;

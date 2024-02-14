@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- LINK FOR FAVICON -->
+  <link id="favicon" rel="shortcut icon" href="./assests/img/logo.jpg" type="image/x-png">
+  <!-- LINK FOR GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Lato:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- LINK FOR NORMAL STYLING  -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- LINK FOR THE RESPONSIVE CSS -->
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- FONT AWESOME FOR ICON -->
+  <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-beta2-web/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-beta2-web/css/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Members' Portal</title>
+</head>
+<body>
+    <div class="sidebar">
+        <button class="hamburger ">
+          <span>
+            <img  class="menu-close" src="./assests/img/icon-close.svg" alt="menu-close">
+          </span>
+        </button>
+        <a class="active" href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./event.html">EVENT</a>
+        <a href="#schedule">MEMBERS ONLY</a>
+        <a href="./contact.html">CONTACT</a>
+    
+      </div>
+      <div class="overlay"></div>
+    
+      <header class="header">
+        <div class="container">
+          <nav class="header__navigation">
+            <a href="#" class="logo"><img src="./assests/img/logo.jpg" alt="CityFolks´ Logo" class="logo--photo"></a>
+    
+    
+            <button class="hamburger">
+              <span>
+               <i class="menu-mobile fas fa-bars"></i>
+    
+              </span>
+            </button>
+    
+            <div class="navigation__nav" id="navigation__nav">
+              <ul class="header__navigation-list">
+                <li class="header__navigation-item active">
+                  <a href="./index.html" class="header__navigation-link">home</a>
+                </li>
+                <li class="header__navigation-item dropdown" onclick="myFunction()">
+                  <a href="./about.html" class="header__navigation-link">about                 <i class="fa fa-caret-down"></i>
+                  </a>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="#" onclick="moveAbout('aboutClub')">About CityFolks</a>
+                    <a href="#" onclick="moveAbout('about--page')">History of Cityfolks Club</a>
+                    <a href="#" onclick="moveAbout('aboutExecutive')">Executives</a>
+                    <a href="#" onclick="moveAbout('committee')">Past Presidents</a>
+                    <a href="#" onclick="moveAbout('about--patron')">Cityfolks Patron</a>
+                    <a href="#" onclick="moveAbout('about--newMembers')">New Members</a>
+                  </div>
+                </li>
+              
+                <li class="header__navigation-item dropdown" onclick="myFunction()">
+                  <a href="./event.html" class="header__navigation-link">event <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Annual Dinners</a>
+    
+                    <a href="#">Monthly Party</a>
+                    <a href="#">Family Party</a>
+                    <a href="#">Others</a>
+                  </div>
+                </li>
+                <li class="header__navigation-item dropdown" onclick="myFunction()">
+                  <a href="./" class="header__navigation-link active">membership <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="#">New Members</a>
+                    <a href="#">Returning Members</a>
+                  </div>
+                </li>
+                <li class="header__navigation-item dropdown" onclick="myFunction()">
+                  <a href="./portal.html" class="header__navigation-link">members only <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="./portal.html">Portal Login</a>
+                    <a href="#">Profile update</a>
+                    <a href="#">Dues Payment</a>
+                    <a href="#">Financial Report</a>
+    
+                  </div>
+                </li>
+                <li class="header__navigation-item">
+                  <a href="./contact.html" class="header__navigation-link">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer--container">
+            <div class="footer--item">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7917.206886918283!2d3.3516172405534697!3d7.171754871332141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1%2C%20SODIMU%20HOUSE%2C%20OPP%20WHITE%20HOUSE%20LABAYI%20WA%20STREET%2C%20OKE-AREGBA%20CARWASH%2C%20ABEOKUTA%2C%20OGUN!5e0!3m2!1sen!2sng!4v1706907247448!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact--location"></iframe>
+            </div>
+           
+            <div class="footer--item-right">
+              <p class="footer--heading u-margin-bottom-small">Cityfolks Club of Nigeria:</p>
+              <span class="footer--paragraph">1, SODIMU'S HOUSE, OPP.WHITE HOUSE LABAYIWA STREET, OKE-AREGBA CARWASH, ABEOKUTA, OGUN-STATE, NIGERIA.</span>
+            </div>
+          </div>
+    
+          <div class="copyright">
+            <div class="copy--item">
+              <span class="footer--paragraph">Copyright © 2024 Cityfolks Club of Nigeria. All rights reserved.</span>
+            </div>
+            <div class="copy--item-right">
+              <ol class="footer--breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About CityFolks</a></li>
+                <li><a href="./event.html">Event</a></li>
+                <li><a href="./portal.html">Membership Portal</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--SCRIPT TAG TO THE APP.JS  -->
+      <script src="./js/script.js"></script>
+</body>
+</html>

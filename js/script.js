@@ -30,23 +30,6 @@ var x = setInterval(function() {
 }, 1000);
 
 
-///////////////////////////////////
-///////////////////////////////////
-//////////////ACTIVE
-
-const navLinks = document.querySelectorAll("header nav ul li a");
-const windowPathname = window.location.pathanme;
-
-navLinks.forEach(navLink => {
-    const navLinkPathname = new URL(navLink.href).pathname;
-
-    if ((windowPathname === navLinkPathname) || (windowPathname === '/index.html' && navLinkPathname === '/')) {
-        navLink.classList.add("active");
-        // document.querySelector('header nav ul li a[href*= ' +']').classList.add('active')
-    }
-});
-
-
 
 const sideBar = document.querySelector(".sidebar");
 const mobileMenu = document.querySelector(".menu-mobile");
@@ -82,3 +65,71 @@ btns.forEach(btn => {
     });
 });
 
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function moveAbout(sectionId) {
+    let aboutClub = document.getElementById('aboutClub');
+    let aboutCommitee = document.getElementById('committee');
+    let aboutPage = document.getElementById('about--page');
+    let aboutActivities = document.getElementById('activities');
+    let aboutPatron = document.getElementById('about--patron');
+    let aboutNewMembers = document.getElementById('about--newMembers');
+
+    if (sectionId === 'aboutClub') {
+      aboutClub.style.display = 'block';
+      aboutPage.style.display = 'none';
+      aboutActivities.style.display = 'block';
+      aboutPatron.style.display = 'none';
+      aboutCommitee.style.display = 'none';
+      aboutNewMembers.style.display = 'none'
+    } else if (sectionId === 'about--page') {
+      aboutClub.style.display = 'none';
+      aboutPage.style.display = 'block';
+      aboutActivities.style.display = 'none';
+      aboutNewMembers.style.display = 'none'
+      aboutPatron.style.display = 'none';
+      aboutCommitee.style.display = 'none';
+    } else if (sectionId === 'committee') {
+      aboutClub.style.display = 'none';
+      aboutPage.style.display = 'none';
+      aboutActivities.style.display = 'none';
+      aboutPatron.style.display = 'none';
+      aboutCommitee.style.display = 'block';
+    } else if (sectionId === 'about--patron') {
+      aboutClub.style.display = 'none';
+      aboutPage.style.display = 'none';
+      aboutActivities.style.display = 'none';
+      aboutCommitee.style.display = 'none';
+      aboutNewMembers.style.display = 'none';
+      aboutPatron.style.display = 'block';
+    } else if (sectionId === 'about--newMembers') {
+      aboutClub.style.display = 'none';
+      aboutPage.style.display = 'none';
+      aboutActivities.style.display = 'none';
+      aboutCommitee.style.display = 'none';
+      aboutPatron.style.display = 'none';
+      aboutNewMembers.style.display = 'block';
+    } 
+    else {
+      aboutClub.style.display = 'none';
+      aboutPage.style.display = 'none';
+      aboutActivities.style.display = 'block';
+      aboutCommitee.style.display = 'none';
+    }
+  }
