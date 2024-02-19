@@ -43,6 +43,56 @@ html {
   width: 95%;
   margin: 0 auto;
 }
+.values-p{
+  font-size: 15px;
+  line-height: 3rem;
+  margin: 20px 0px;
+}
+.partner-images{
+  display: flex;
+}
+.partner-container{
+  
+}
+.pic-1{
+  background: url("/assests/img/7459344.jpg");
+}
+.pic-2{
+  background: url("/assests/img/christmas_2012_new_6412.jpg");
+}
+.pic-3{
+  background: url("/assests/img/christmas_2012_new_6518.jpg");
+}
+.pic-4{
+  background: url("/assests/img/christmas_2012_new_6747.jpg");
+}
+
+.pic{
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+.events-heading{
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-bottom: 3px solid green;
+  width: 500px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.event-txt{
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: 400;
+  line-height: 3rem;
+}
+/* .coloured{
+  border-top: #32912d 7px solid;
+  border-radius: 10px;
+} */
 
 .header {
   display: flex;
@@ -203,6 +253,7 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
   height: 7px;
   left: 0;
   border-radius: 100px;
+  /* margin-bottom: 50px; */
 }
 .simple-heading {
   font-size: 2.4rem;
@@ -818,6 +869,9 @@ BY JUST ONLY REDUCING THEM IN SIZES IN MEDIA QUERY */
 }
 .main--event-left {
   flex: 0 0 50%;
+}
+.main--event-left img{
+  margin-left: 150px;
 }
 .main--event-right {
   flex: 0 0 50%;

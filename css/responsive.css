@@ -134,4 +134,28 @@
   .copy--item-right {
     display: none;
   }
+  .schedulling h3{
+    font-size: 20px;
+  }
+  .events-heading{
+    width: 280px;
+  }
+  .man-of-event h3{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .main--event-photo{
+    display: none;
+  }
+  .man-of-event__container{
+    display: inline-block;
+    /* flex-direction: row; */
+  }
+  .man-of-event p{
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+  .schedulling p{
+    font-size: 14px;
+  }
 }
