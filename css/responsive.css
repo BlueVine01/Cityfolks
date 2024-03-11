@@ -158,4 +158,8 @@
   .schedulling p{
     font-size: 14px;
   }
+  .social-media {
+    display: none;
+  }
+
 }
