@@ -103,7 +103,12 @@
    flex-direction: column;
   }
 
-
+  .about__container {
+    display: none;
+  }
+  .content__photo {
+    display: none;
+  }
   .footer--container {
     flex-direction: column;
   }
@@ -161,5 +166,17 @@
   .social-media {
     display: none;
   }
+  .event__section {
+    background-position: center;
+  }
+  .launch-time {
+    gap: 1.4rem;
+  }
+  .paragraph {
+    font-size: 2.4rem;
+  }
 
+  .form-container {
+    max-width: 55rem;
+  }
 }

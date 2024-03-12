@@ -67,7 +67,7 @@
                   <div class="dropdown-content" id="myDropdown">
                     <a href="#" onclick="moveAbout('aboutClub')">About CityFolks</a>
                     <a href="#" onclick="moveAbout('about--page')">History of Cityfolks Club</a>
-                    <a href="#" onclick="moveAbout('aboutExecutive')">Executives</a>
+                    <a href="#" onclick="moveAbout('aboutExecutive')">Activities of Cityfolks Club</a>
                     <a href="#" onclick="moveAbout('committee')">Past Presidents</a>
                     <a href="#" onclick="moveAbout('about--patron')">Cityfolks Patron</a>
                     <a href="#" onclick="moveAbout('about--newMembers')">New Members</a>
@@ -110,8 +110,288 @@
         </div>
       </header>
 
-      <main>
+      <main  class="portal-main">
+        <div class="form-container">
+          <h1 class="heading u-margin-bottom-small">MEMBERSHIP APPLICATION FORM</h1>
+          <form class="form">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Enter your First Name" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="address">Residential Address</label>
+              <input type="text" id="address" name="Residential Address" placeholder=" Enter Your Residential Address" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="origin">LG of Origin
+              </label>
+              <input type="text" id="lgOrigin" name="address" placeholder="Enter your LG of Origin" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="city">City 
+              </label>
+              <input type="text" id="city" name="address" placeholder="Enter your City" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="Country" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="text" id="email" name="email" placeholder="Enter Your Email Address" required="">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Phone Number</label>
+              <input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+              title="Enter Your phone Nmber">
+            </div>
+
+            <label for="email">Marital Status</label>
+            <div class="radio-group">
+              <input class="radio-input" name="radio-group" id="radio1" type="radio">
+              <label class="radio-label" for="radio1">
+                <span class="radio-inner-circle"></span>
+                Single
+              </label>
+              
+              <input class="radio-input" name="radio-group" id="radio2" type="radio">
+              <label class="radio-label" for="radio2">
+                <span class="radio-inner-circle"></span>
+                Married
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor's name">Sponsor's Name</label>
+              <input type="text" id="" name="sponsor" placeholder="Enter a Sponsor's name">
+            </div>
         
+            <div class="form-group">
+              <label for="sponsor's name">Sponsor's Email</label>
+              <input type="email" id="" name="sponsor" placeholder="Enter your Sponsor's Email Address">
+            </div>
+        
+
+            <div class="form-group">
+              <label for="sponsor's name">Sponsor's Phone Number</label>
+              <input type="tel" placeholder="Enter Sponsor's Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+                  title="Enter Your phone Nmber">
+            </div>
+
+            <h2 class="universal-level">Place of Work</h2>
+            <div class="form-group">
+              <label for="sponsor's name">Organization</label>
+              <input type="text" id="" name="organization" placeholder="Organization Name">
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor's name">Designation / Role</label>
+              <input type="text" id="" name="role" placeholder="Designation / Role">
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor's name">Office Address</label>
+              <input type="text" id="" name="office address" placeholder="Office Address">
+            </div>
+           
+            <div class="form-group">
+              <label for="sponsor's name">Local Government Area (LGA)</label>
+              <input type="text" id="" name="LGA" placeholder="Organization LGA">
+            </div>
+         
+            <div class="form-group">
+              <label for="sponsor's name">Organization City</label>
+              <input type="text" id="" name="city" placeholder="Organization City">
+            </div>
+           
+            <div class="form-group">
+              <label for="sponsor's name">Organization Country</label>
+              <input type="text" id="" name="country" placeholder="Organization Country">
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor's name">Organization Website</label>
+              <input type="url" id="" name="sponsor" placeholder="Enter your Organization's Website">
+            </div>
+
+
+            <h2 class="universal-level">Work Experience</h2>
+            <div class="form-group">
+              <label for="workposition">Present Position</label>
+              <input type="text" id="" name="position" placeholder="Present position">
+            </div>
+
+            <div class="form-group">
+              <label for="workposition">Previous Position</label>
+              <input type="text" id="" name="position" placeholder="Previous position">
+            </div>
+            
+            <div class="form-group">
+              <label for="workposition">Qualifications 1</label>
+              <input type="text" id="" name="position" placeholder="Qualifications 1">
+            </div>
+
+            <div class="form-group">
+              <label for="workposition">Qualifications 2</label>
+              <input type="text" id="" name="position" placeholder="Qualifications 2">
+            </div>
+
+   
+            <h2 class="universal-level">membership of professional association</h2>
+            <div class="form-group">
+              <label for="membership">Qualifications 1</label>
+              <input type="text" id="" name="membership" placeholder="Membership ">
+            </div>
+           
+            <h2 class="universal-level">membership of other clubs</h2>
+            <div class="form-group">
+              <label for="membership"></label>
+              <input type="text" id="" name="membership" placeholder="Membership ">
+            </div>
+
+            <h2 class="universal-level">Language information</h2>
+            <div class="form-group">
+              <label for="membership">Native Language</label>
+              <input type="text" id="" name="membership" placeholder="Mother's Tongue ">
+            </div>
+
+            <div class="form-group">
+              <label for="membership">Official Language</label>
+              <input type="text" id="" name="membership" placeholder="Language 1 ">
+            </div>
+
+            <div class="form-group">
+              <label for="membership">Other Language(if available, specify!)</label>
+              <input type="text" id="" name="membership" placeholder="Language 2 ">
+            </div>
+          
+            <h2 class="universal-level">sponsor <i>(Financial CFN Member)</i></h2>
+            <div class="form-group">
+              <label for="membership">Title</label>
+              <input type="text" id="" name="membership" placeholder="Title ">
+            </div>
+
+            <div class="form-group">
+              <label for="membership">First Name</label>
+              <input type="text" id="" name="membership" placeholder="Enter First Name ">
+            </div>
+           
+            <div class="form-group">
+              <label for="membership">Last Name</label>
+              <input type="text" id="" name="membership" placeholder="Enter Last Name ">
+            </div>
+
+            <div class="form-group">
+              <label for="membership">Statement</label>
+              <input type="text" id="" name="membership" placeholder="Statement ">
+            </div>
+           
+            <h2 class="universal-level">referees</h2>
+            <ol>
+              <li>
+                <div class="form-group">
+                  <label for="membership">Name</label>
+                  <input type="text" id="" name="name" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Organization</label>
+                  <input type="text" id="" name="organization" placeholder="Organization ">
+                </div>
+          
+                <div class="form-group">
+                  <label for="membership">Designation</label>
+                  <input type="text" id="" name="despite" placeholder="Designation ">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Email Address</label>
+                  <input type="email" id="" name="email" placeholder="Email Address ">
+                </div>
+           
+                <div class="form-group">
+                  <label for="membership">Phone Number</label>
+                  <input type="tel" placeholder="Enter Sponsor's Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+                  title="Enter Your phone Nmber">
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <label for="membership">Name</label>
+                  <input type="text" id="" name="name" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Organization</label>
+                  <input type="text" id="" name="organization" placeholder="Organization ">
+                </div>
+          
+                <div class="form-group">
+                  <label for="membership">Designation</label>
+                  <input type="text" id="" name="despite" placeholder="Designation ">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Email Address</label>
+                  <input type="email" id="" name="email" placeholder="Email Address ">
+                </div>
+           
+                <div class="form-group">
+                  <label for="membership">Phone Number</label>
+                  <input type="tel" placeholder="Enter Sponsor's Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+                  title="Enter Your phone Nmber">
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <label for="membership">Name</label>
+                  <input type="text" id="" name="name" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Organization</label>
+                  <input type="text" id="" name="organization" placeholder="Organization ">
+                </div>
+          
+                <div class="form-group">
+                  <label for="membership">Designation</label>
+                  <input type="text" id="" name="despite" placeholder="Designation ">
+                </div>
+
+                <div class="form-group">
+                  <label for="membership">Email Address</label>
+                  <input type="email" id="" name="email" placeholder="Email Address ">
+                </div>
+           
+                <div class="form-group">
+                  <label for="membership">Phone Number</label>
+                  <input type="tel" placeholder="Enter Sponsor's Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+                  title="Enter Your phone Nmber">
+                </div>
+              </li>
+            </ol>
+
+            <p><i>Please attach your CV for assessment</i></p>
+            <label for="CV" class="u-margin-bottom-small">
+              <input type="file" name="CV" id="CV" >
+            </label>
+
+            <a href="#" class="btn green--btn u-text-center">Submit</a>
+          </form>
+        </div>
       </main>
 
       <footer class="footer">
